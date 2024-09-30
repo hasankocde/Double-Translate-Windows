@@ -1,0 +1,104 @@
+/* app.css */
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh; /* Tüm görünüm yüksekliğini kaplar */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2px;
+  box-sizing: border-box;
+  
+   
+}
+
+.full-width {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* Metin alanları arasında boşluk */
+  flex-grow: 1;
+  
+  
+}
+
+.input-container,
+.result-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", "San Francisco", "Ubuntu", "Fira Sans", "Roboto", "Arial", "Helvetica", sans-serif !important;
+  flex: 1; /* Eşit büyüme */
+  /* border: 2px solid #f50606; */
+  
+  
+}
+
+
+
+.text-area1 {
+  flex-grow: 1;
+  padding: 3px;
+  border: 1px solid #ddd; /* Sınır ekledik */
+  border-radius: 4px;
+  font-size: 13px;
+  resize: none; /* Kullanıcının boyutlandırmasını engeller */
+  /* height: calc(100vh - 320px); */
+  height: 100px;
+  /* border: 2px solid #f50606; */
+  
+}
+
+.text-area2 {
+  flex-grow: 1;
+  padding: 3px;
+  border: 1px solid #ddd; /* Sınır ekledik */
+  border-radius: 4px;
+  font-size: 13px;
+  resize: none; /* Kullanıcının boyutlandırmasını engeller */
+  height: 100px; /* Sabit yükseklik, ihtiyaca göre ayarlanabilir */
+}
+
+.text-area3 {
+  flex-grow: 1;
+  padding: 3px;
+  border: 1px solid #ddd; /* Sınır ekledik */
+  border-radius: 4px;
+  font-size: 13px;
+  resize: none; /* Kullanıcının boyutlandırmasını engeller */
+  height: 100px; /* Sabit yükseklik, ihtiyaca göre ayarlanabilir */
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  
+}
+
+/* Select bileşeninin buton gibi görünmesi için stil */
+.arco-select {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0px;
+  background-color: #f9f9f9;
+  font-size: 12px;
+  /* border: 2px solid #f50606; */
+  
+}
+
+
+
+
